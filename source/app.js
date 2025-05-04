@@ -1,0 +1,10 @@
+var tooltipSpan = document.getElementById('details-box');
+const colors = ['#dedede', '#0077ff', '#afdeff', '#db000f', '#ffbcc0', '#ffe600'];
+const PURPLE = '#ac3ef5';
+const states = document.querySelectorAll('.us-state-map path, .us-state-map circle');
+let democratVotes = 0;
+let republicanVotes = 0;
+let nebraskaState = document.getElementById('nebraska');
+let maineState = document.getElementById('maine');
+let nebraskaDemVotes = 0;
+let nebraskaRepVotes = 0;

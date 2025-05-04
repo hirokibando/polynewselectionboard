@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Instrument Sans', system-ui, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.pnc-header {
+    padding: 2vh;
+    width: 100%;
+    gap: 20px;
+    display: flex;
+}
+
+.pnc-header-left {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    width: 45%;
+}
+
+.pnc-logo, .pnc-promo {
+    width: 7vh;
+    height: 7vh;
+}
+
+.pnc-logo {
+    box-shadow: 0 0 20px rgba(219, 0, 15, 0.3);
+    border-radius: 1.7vh;
+}
+
+.pnc-header-left h1 {
+    font-size: 6vh;
+    font-family: 'Bricolage Grotesque';
+}
+
+.pnc-header-right {
+    width: 55%;
+    display: flex;
+    align-items: center;
+}
+
+.pnc-header-right-candidates {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.pnc-header-right-candidate {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.clock {
+    font-size: 9vh;
+    line-height: 0.9em;
+    font-family: 'Bricolage Grotesque';
+}
+
+.pnc-header-right-candidate-image {
+    width: 8vh;
+    height: 8vh;
+    border-radius: 100%;
+}
+
+.r-circle {
+    border: 1vh solid #db000f;
+    box-shadow: 0 0 15px rgba(219, 0, 15, 0.3);
+}
+
+.b-circle {
+    border: 1vh solid #0077ff;
+    box-shadow: 0 0 15px rgba(0, 119, 255, 0.3);
+}
+
+.pnc-header-right-candidate-name {
+    font-family: 'Bricolage Grotesque';
+}
+
+.pnc-header-right-candidate-party {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.pnc-main {
+    display: flex;
+    gap: 20px;
+}
+
+.pnc-main-body {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+}
+
+.us-state-map {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+.pnc-main-3d-race {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+    align-items: end;
+}
+
+.pnc-main-3d-race-slope {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 20px 0 20px 0;
+    transition: all .4s ease;
+    min-height: 15%;
+    z-index: 1;
+}
+
+.pnc-main-3d-race-slope h3{
+    color: white;
+    font-family: 'Bricolage Grotesque';
+    font-size: 2.5vh;
+    font-weight: 500;
+}
+
+.pnc-main-3d-race-slope h1 {
+    color: white;
+    font-family: 'Bricolage Grotesque';
+    font-weight: 800;
+    font-size: 6vh;
+    line-height: 0.9em;
+    transition: all .4s ease;
+}
+
+.r-slope {
+    background-color: #db000f;
+    box-shadow: 0 0 30px rgba(219, 0, 15, 0.285);
+}
+
+.b-slope {
+    background-color: #0077ff;
+    box-shadow: 0 0 15px rgba(0, 119, 255, 0.3);
+}
+
+.pnc-controls-panel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 10px;
+}
+
+.pnc-controls-panel-btn {
+    color: #fff;
+}
+
+.something {
+    fill: #ac3ef5;
+}
+
+.victory-line {
+    height: 2px;
+    width: calc(19.89% - 22px);
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    bottom: calc(69.555555% - 78px);
+    left: 20px;
+}
+.victory-line:after {
+    content: '270';
+    position: absolute;
+    left: 101%;
+    font-size: 21px;
+    font-weight: 500;
+    top: -17px;
+}
+
+.state-number-text {
+    font-weight: 500;
+}
